@@ -1,9 +1,0 @@
-name: RAMCPlugin
-version: '1.0.0'
-main: io.lumine.rAMCPlugin.RAMCPlugin
-api-version: '1.21'
-bootstrapper: io.lumine.rAMCPlugin.RAMCPluginBootstrap
-
-commands:
-  lavadecor:
-    description: get lava decor blocks in exchange for lava buckets
