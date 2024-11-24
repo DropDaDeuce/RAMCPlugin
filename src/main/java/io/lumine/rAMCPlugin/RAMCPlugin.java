@@ -17,6 +17,7 @@ public final class RAMCPlugin extends JavaPlugin {
 
         getServer().getPluginManager().registerEvents(new LavaBucketCustom(), this);
         getServer().getPluginManager().registerEvents(new GetBucketBack(), this);
+        getServer().getPluginManager().registerEvents(new StopPhysicsEvent(), this);
         getCommand("lavadecor").setExecutor(new LavaDecor());
         getCommand("lavadecor").setTabCompleter(new LavaDecorTabCompletion());
         log.info("RAMC Custom Plugin is loaded! That's alot of nuts!");

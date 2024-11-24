@@ -2,6 +2,7 @@ package io.lumine.rAMCPlugin;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
+import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.block.BlockFace;
@@ -22,6 +23,7 @@ public class LavaBucketCustom implements Listener {
     public void onPlayerInteract(PlayerBucketEmptyEvent event) {
         ItemStack itemStack = event.getPlayer().getInventory().getItemInMainHand();
         Material m = event.getBucket();
+
         if (m == Material.LAVA_BUCKET) {
             if (itemStack.hasItemMeta()) {
                 if (itemStack.getItemMeta().hasCustomModelData() && itemStack.getItemMeta().hasDisplayName()) {
@@ -85,7 +87,7 @@ public class LavaBucketCustom implements Listener {
                             }
 
                             faceBlock.setBlockData(multiFace);
-                            faceBlock.getState().update(false, false);
+                            faceBlock.getState().update(true, false);
 
                             if (event.getPlayer().getGameMode() != GameMode.CREATIVE) {
                                 itemStack.setAmount(itemStack.getAmount() - 1);

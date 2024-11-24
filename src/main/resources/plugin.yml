@@ -1,5 +1,5 @@
 name: RAMCPlugin
-version: '1.0.0'
+version: '1.1.0'
 main: io.lumine.rAMCPlugin.RAMCPlugin
 api-version: '1.21'
 bootstrapper: io.lumine.rAMCPlugin.RAMCPluginBootstrap
