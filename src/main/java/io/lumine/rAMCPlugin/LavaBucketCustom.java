@@ -2,7 +2,6 @@ package io.lumine.rAMCPlugin;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
-import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.block.BlockFace;
@@ -14,10 +13,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerBucketEmptyEvent;
 import org.bukkit.inventory.ItemStack;
 
-import java.util.logging.Logger;
-
 public class LavaBucketCustom implements Listener {
-    private static final Logger log = Logger.getLogger("LavaBucketCustom");
 
     @EventHandler
     public void onPlayerInteract(PlayerBucketEmptyEvent event) {
